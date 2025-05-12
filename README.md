@@ -74,3 +74,74 @@ mutation {
     }
   })
 }
+```
+
+
+## Ejemplo de ejecución de queries GraphQL
+
+Hacer la solicitud POST al endpoint `/graphql` o desde el navegador a http://127.0.0.1:8080/graphql con el siguiente cuerpo:
+
+```graphql
+query{
+  typeDocuments{
+    id,
+    nameTypeDocument
+  }
+}
+```
+
+```graphql
+query{
+  countries {
+    id,
+    countryCode,
+    countryName
+  }
+}
+```
+
+```graphql
+query{
+  userDocuments{
+    userId,
+    typeDocumentId,
+    document,
+    placeExpedition,
+    dateExpedition
+  }
+}
+```
+
+```graphql
+query{
+  contactInfos{
+    id,
+    userId,
+    address,
+    countryId,
+    city,
+    phone,
+    celPhone,
+    emergencyName,
+    emergencyPhone
+  }
+}
+```
+
+```graphql
+query{
+  appUsers{
+    id,
+    lastName,
+    name,
+    isMilitar,
+    isTemporal, 
+    timeCreate,
+    username, 
+    password,
+    email,
+    emailVerified,
+    verificationToken
+  }
+}
+```
