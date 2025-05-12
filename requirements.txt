@@ -1,0 +1,12 @@
+fastapi==0.115.12
+strawberry-graphql==0.266.1
+uvicorn==0.34.2
+SQLAlchemy==2.0.40
+aiosqlite==0.21.0
+passlib==1.7.4
+pre-commit==4.2.0
+python-dotenv==1.1.0
+black==25.1.0
+isort==6.0.1
+flake8==7.2.0
+mypy==1.15.0
