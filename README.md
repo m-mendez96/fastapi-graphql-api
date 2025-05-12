@@ -17,7 +17,7 @@ Para ejecutar el proyecto, se debe tener instalados los siguientes requisitos:
 1. Clona el repositorio:
 
    ```bash
-   git clone //https:...
+   git clone https://github.com/m-mendez96/fastapi-graphql-api
    cd fastapi-graphql-api
 
 2. Construir la imágene de Docker y ejecutar el contenedor con Docker Compose:
