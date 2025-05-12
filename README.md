@@ -44,3 +44,33 @@ Para ejecutar el proyecto, se debe tener instalados los siguientes requisitos:
 4. Inicializar la base de datos, ejecutar el siguiente comando en la terminal:
    ```bash
    python create_db.py
+
+## 🧬 Ejemplo de ejecución de mutación GraphQL
+
+Hacer la solicitud POST al endpoint `/graphql` o desde el navegador a http://127.0.0.1:8080/graphql con el siguiente cuerpo:
+
+```graphql
+mutation {
+  registerUser(input: {
+    lastName: "Mendez"
+    name: "Miguel"
+    username: "m-mendez96"
+    password: "pass123"
+    email: "miguel.mendez@example.com"
+    document: {
+      typeDocumentId: 1
+      document: "1122334455"
+      placeExpedition: "Bogotá"
+      dateExpedition: "2020-01-01"
+    }
+    contact: {
+      address: "Calle 123"
+      countryId: 1
+      city: "Bogotá"
+      phone: "601-123-4567"
+      celPhone: "3151234567"
+      emergencyName: "Juan"
+      emergencyPhone: "3109876543"
+    }
+  })
+}
